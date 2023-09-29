@@ -1,8 +1,8 @@
 {
-  "full_name": "Audrey Roy Greenfeld",
-  "email": "audreyr@example.com",
-  "github_username": "audreyr",
-  "project_name": "Python Boilerplate",
+  "full_name": "Guy R",
+  "email": "guyreading@live.co.uk",
+  "github_username": "guyreading",
+  "project_name": "Python Boilerplate + docker + aws lambda",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
   "pypi_username": "{{ cookiecutter.github_username }}",
