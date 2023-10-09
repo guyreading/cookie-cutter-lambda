@@ -1,6 +1,9 @@
 ======================
-Cookiecutter PyPackage
+Forked Cookiecutter PyPackage that also includes Docker compatibility & AWS Lambda.
 ======================
+
+# Notes
+docker run -v %cd%:/local_dir <img_name>
 
 .. image:: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/shield.svg
     :target: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/
@@ -19,6 +22,12 @@ Cookiecutter_ template for a Python package.
 * GitHub repo: https://github.com/audreyfeldroy/cookiecutter-pypackage/
 * Documentation: https://cookiecutter-pypackage.readthedocs.io/
 * Free software: BSD license
+
+Docker
+--------
+To develop the repo within docker (when using Windows):
+docker run -v /host/settings/dir:/etc/settings/my_app_settings some_repo/some_image:some_tag
+docker run -v \host\settings\dir:\etc\settings\my_app_settings some_repo\some_image:some_tag
 
 Features
 --------
