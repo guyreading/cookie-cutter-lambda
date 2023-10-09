@@ -3,7 +3,10 @@ Forked Cookiecutter PyPackage that also includes Docker compatibility & AWS Lamb
 ======================
 
 # Notes
-docker run -v %cd%:/local_dir <img_name>
+run for dev: `docker run -v %cd%:/local_dir <img_name>`
+run to test lambda locally: `docker run -p 9000:8080 <img_name>`
+then to test: `curl http://localhost:9000/2015-03/31/functions/function/invocations" -d '{"source": "local"}'`
+  See this: https://docs.aws.amazon.com/lambda/latest/dg/images-test.html
 
 .. image:: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/shield.svg
     :target: https://pyup.io/repos/github/audreyfeldroy/cookiecutter-pypackage/
